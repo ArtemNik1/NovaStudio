@@ -1,0 +1,28 @@
+@import url("blocks/header.css");
+@import url("blocks/hero.css");
+@import url("blocks/button.css");
+@import url("blocks/section.css");
+@import url("blocks/card.css");
+@import url("blocks/footer.css");
+@import url("blocks/page.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

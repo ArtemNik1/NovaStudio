@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Связаться с NovaStudio — форма обратной связи и контакты.">
+  <title>NovaStudio — Контакты</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">Nova<span class="header__logo-accent">Studio</span></a>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+      <nav>
+        <ul class="header__nav">
+          <li><a href="index.html" class="header__link">Главная</a></li>
+          <li><a href="about.html" class="header__link">О нас</a></li>
+          <li><a href="portfolio.html" class="header__link">Портфолио</a></li>
+          <li><a href="contact.html" class="header__link header__link--active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="page-hero">
+      <h1 class="page-hero__title">Контакты</h1>
+      <p class="page-hero__text">
+        Оставьте заявку — мы свяжемся с вами в ближайшее время.
+      </p>
+    </section>
+
+    <div class="content">
+      <div class="cards cards--spaced">
+        <article class="card">
+          <div class="card__icon">📧</div>
+          <h3 class="card__title">Email</h3>
+          <p class="card__text">hello@novastudio.example</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">📱</div>
+          <h3 class="card__title">Телефон</h3>
+          <p class="card__text">+7 (999) 123-45-67</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">📍</div>
+          <h3 class="card__title">Адрес</h3>
+          <p class="card__text">г. Москва, ул. Веб-разработчиков, 42</p>
+        </article>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form__group">
+          <label class="form__label" for="name">Ваше имя</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="ivan@example.com" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="message">Сообщение</label>
+          <textarea class="form__textarea" id="message" name="message" placeholder="Опишите ваш проект..." required></textarea>
+        </div>
+        <button type="submit" class="button button--primary form__submit">Отправить заявку</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">NovaStudio</a>
+          <p class="footer__text">Веб-студия. Многостраничные сайты с методологией БЭМ.</p>
+        </div>
+        <div>
+          <h3 class="footer__nav-title">Навигация</h3>
+          <ul class="footer__nav">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="about.html" class="footer__link">О нас</a></li>
+            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="contact.html" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 NovaStudio. Основатель Артем Николаиди.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

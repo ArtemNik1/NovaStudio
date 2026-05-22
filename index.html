@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaStudio — веб-студия. Создаём современные сайты с применением методологии БЭМ.">
+  <title>NovaStudio — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">Nova<span class="header__logo-accent">Studio</span></a>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+      <nav>
+        <ul class="header__nav">
+          <li><a href="index.html" class="header__link header__link--active">Главная</a></li>
+          <li><a href="about.html" class="header__link">О нас</a></li>
+          <li><a href="portfolio.html" class="header__link">Портфолио</a></li>
+          <li><a href="contact.html" class="header__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Экран 1: Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__container">
+        <span class="hero__badge">Веб-студия полного цикла</span>
+        <h1 class="hero__title">
+          Создаём сайты,<br>
+          <span class="hero__title-accent">которые работают</span>
+        </h1>
+        <p class="hero__text">
+          Разрабатываем многостраничные проекты с чистой вёрсткой по методологии БЭМ.
+          Каждый блок — независимый и переиспользуемый.
+        </p>
+        <div class="hero__actions">
+          <a href="portfolio.html" class="button button--primary">Смотреть работы</a>
+          <a href="contact.html" class="button button--secondary">Связаться</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Прокрутите вниз</span>
+        <span class="hero__scroll-icon"></span>
+      </div>
+    </section>
+
+    <!-- Экран 2: Услуги -->
+    <section class="section section--gradient" id="services">
+      <div class="section__container">
+        <header class="section__header">
+          <span class="section__label">Услуги</span>
+          <h2 class="section__title">Что мы делаем</h2>
+          <p class="section__subtitle">
+            Полный спектр услуг для вашего digital-присутствия — от идеи до запуска.
+          </p>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🎨</div>
+            <h3 class="card__title">Дизайн</h3>
+            <p class="card__text">
+              UI/UX-дизайн, прототипирование и адаптивные макеты для всех устройств.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">💻</div>
+            <h3 class="card__title">Вёрстка</h3>
+            <p class="card__text">
+              Семантический HTML и CSS по БЭМ: блоки, элементы, модификаторы.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🚀</div>
+            <h3 class="card__title">Запуск</h3>
+            <p class="card__text">
+              Деплой на GitHub Pages, оптимизация скорости и SEO-настройка.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 3: Преимущества -->
+    <section class="section section--light" id="advantages">
+      <div class="section__container">
+        <header class="section__header">
+          <span class="section__label">Преимущества</span>
+          <h2 class="section__title">Почему выбирают нас</h2>
+          <p class="section__subtitle">
+            Прозрачные процессы, понятная структура кода и внимание к деталям.
+          </p>
+        </header>
+        <div class="cards">
+          <article class="card card--light">
+            <div class="card__icon">📐</div>
+            <h3 class="card__title">Методология БЭМ</h3>
+            <p class="card__text">
+              Независимые блоки без каскадных конфликтов. Легко поддерживать и масштабировать.
+            </p>
+          </article>
+          <article class="card card--light">
+            <div class="card__icon">📱</div>
+            <h3 class="card__title">Адаптивность</h3>
+            <p class="card__text">
+              Сайт корректно отображается на смартфонах, планшетах и десктопах.
+            </p>
+          </article>
+          <article class="card card--light">
+            <div class="card__icon">⚡</div>
+            <h3 class="card__title">Скорость</h3>
+            <p class="card__text">
+              Лёгкий код без лишних зависимостей — быстрая загрузка страниц.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 4: Призыв к действию -->
+    <section class="section section--dark" id="cta">
+      <div class="section__container">
+        <header class="section__header">
+          <span class="section__label">Начнём проект</span>
+          <h2 class="section__title">Готовы к сотрудничеству?</h2>
+          <p class="section__subtitle">
+            Расскажите о вашей задаче — мы подготовим предложение в течение 24 часов.
+          </p>
+        </header>
+        <div class="section__actions">
+          <a href="contact.html" class="button button--primary">Оставить заявку</a>
+          <a href="about.html" class="button button--secondary">Узнать о студии</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <p class="stat__number">50+</p>
+            <p class="stat__label">Проектов</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">5</p>
+            <p class="stat__label">Лет опыта</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">100%</p>
+            <p class="stat__label">БЭМ-вёрстка</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">24ч</p>
+            <p class="stat__label">Ответ на заявку</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">NovaStudio</a>
+          <p class="footer__text">
+            Веб-студия. Многостраничные сайты с методологией БЭМ и деплоем на GitHub Pages.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__nav-title">Навигация</h3>
+          <ul class="footer__nav">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="about.html" class="footer__link">О нас</a></li>
+            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="contact.html" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 NovaStudio. Основатель Артем Николаиди.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
