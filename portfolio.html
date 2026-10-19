@@ -3,151 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Портфолио NovaStudio — выполненные проекты и кейсы.">
-  <title>NovaStudio — Портфолио</title>
+  <meta name="description" content="Трекер задач, каталог товаров и многостраничный сайт: проекты Артёма Николаиди с открытым исходным кодом.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Проекты | NovaStudio">
+  <meta property="og:description" content="Трекер задач, каталог товаров и многостраничный сайт: проекты Артёма Николаиди с открытым исходным кодом.">
+  <meta property="og:type" content="website">
+  <title>Проекты | NovaStudio</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
   <header class="header">
     <div class="header__container">
-      <a href="index.html" class="header__logo">Nova<span class="header__logo-accent">Studio</span></a>
-      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
-        <span class="header__burger-line"></span>
+      <a href="index.html" class="header__logo" aria-label="NovaStudio - главная">Nova<span class="header__logo-accent">Studio</span></a>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false">
+        <span class="header__burger-line"></span><span class="header__burger-line"></span><span class="header__burger-line"></span>
       </button>
-      <nav>
-        <ul class="header__nav">
+      <nav aria-label="Основная навигация">
+        <ul class="header__nav" id="site-nav">
           <li><a href="index.html" class="header__link">Главная</a></li>
-          <li><a href="about.html" class="header__link">О нас</a></li>
-          <li><a href="portfolio.html" class="header__link header__link--active">Портфолио</a></li>
+          <li><a href="about.html" class="header__link">О разработчике</a></li>
+          <li><a href="portfolio.html" class="header__link header__link--active" aria-current="page">Проекты</a></li>
           <li><a href="contact.html" class="header__link">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <main class="page__main">
-    <section class="page-hero">
-      <h1 class="page-hero__title">Портфолио</h1>
-      <p class="page-hero__text">
-        Подборка проектов, свёрстанных по методологии БЭМ с адаптивным дизайном.
-      </p>
-    </section>
-
-    <div class="content">
-      <div class="content__grid">
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-1.svg"
-            alt="Корпоративный сайт TechCorp"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">TechCorp</h3>
-            <span class="portfolio-item__tag">Корпоративный сайт · БЭМ</span>
-          </div>
+  <main id="main" tabindex="-1" class="page__main">
+    <section class="page-hero"><h1 class="page-hero__title">Проекты</h1><p class="page-hero__text">Примеры интерфейсов и программной логики. Это учебные и самостоятельные проекты; они не выдаются за выполненные клиентские заказы.</p></section>
+    <div class="content"><div class="project-grid">
+        <article class="project-card">
+          <img class="project-card__image" src="images/portfolio/po-delu.jpg" alt="Интерфейс проекта По делу" width="1200" height="900" loading="lazy">
+          <div class="project-card__body"><p class="project-card__kind">Веб-приложение</p><h2 class="project-card__title">По делу</h2><p class="project-card__text">Трекер задач с авторизацией, календарём, приоритетами и серверным хранением данных.</p><p class="project-card__stack">React · TypeScript · NestJS · PostgreSQL</p><a class="button button--secondary" href="https://github.com/ArtemNik1/po-delu">Посмотреть код<span class="sr-only"> проекта По делу</span></a></div>
         </article>
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-2.svg"
-            alt="Лендинг CodeStart"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">CodeStart</h3>
-            <span class="portfolio-item__tag">Лендинг · Адаптив</span>
-          </div>
+        <article class="project-card">
+          <img class="project-card__image" src="images/portfolio/showcase.jpg" alt="Интерфейс проекта Каталог товаров" width="1200" height="900" loading="lazy">
+          <div class="project-card__body"><p class="project-card__kind">Демонстрационный проект</p><h2 class="project-card__title">Каталог товаров</h2><p class="project-card__text">Витрина предметов для дома: поиск, категории, страницы товаров и подготовка заявки.</p><p class="project-card__stack">Next.js · TypeScript</p><a class="button button--secondary" href="https://github.com/ArtemNik1/Showcase">Посмотреть код<span class="sr-only"> проекта Каталог товаров</span></a></div>
         </article>
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-3.svg"
-            alt="Интернет-магазин ShopLine"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">ShopLine</h3>
-            <span class="portfolio-item__tag">E-commerce · 4 страницы</span>
-          </div>
+        <article class="project-card">
+          <img class="project-card__image" src="images/portfolio/novastudio.jpg" alt="Интерфейс проекта NovaStudio" width="1200" height="900" loading="lazy">
+          <div class="project-card__body"><p class="project-card__kind">Личный сайт</p><h2 class="project-card__title">NovaStudio</h2><p class="project-card__text">Многостраничный сайт с услугами, примерами работ и формой подготовки письма.</p><p class="project-card__stack">HTML · CSS · JavaScript</p><a class="button button--secondary" href="https://github.com/ArtemNik1/NovaStudio">Посмотреть код<span class="sr-only"> проекта NovaStudio</span></a></div>
         </article>
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-4.svg"
-            alt="Блог DevDaily"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">DevDaily</h3>
-            <span class="portfolio-item__tag">Блог · GitHub Pages</span>
-          </div>
-        </article>
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-5.svg"
-            alt="Портфолио дизайнера ArtFlow"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">ArtFlow</h3>
-            <span class="portfolio-item__tag">Портфолио · Минимализм</span>
-          </div>
-        </article>
-        <article class="portfolio-item">
-          <img
-            class="portfolio-item__img"
-            src="images/portfolio/project-6.svg"
-            alt="Сайт NovaStudio"
-            width="600"
-            height="450"
-            loading="lazy"
-          >
-          <div class="portfolio-item__overlay">
-            <h3 class="portfolio-item__title">NovaStudio</h3>
-            <span class="portfolio-item__tag">Текущий проект · БЭМ</span>
-          </div>
-        </article>
-      </div>
-    </div>
+    </div><p class="content-note">Этот сайт тоже входит в подборку. Откройте репозитории, чтобы посмотреть описание, стек и инструкции запуска.</p></div>
   </main>
-
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__top">
         <div class="footer__brand">
           <a href="index.html" class="footer__logo">NovaStudio</a>
-          <p class="footer__text">Веб-студия. Многостраничные сайты с методологией БЭМ.</p>
+          <p class="footer__text">Артём Николаиди, веб-разработчик. Сайты услуг, каталоги и веб-приложения.</p>
+          <a class="footer__link" href="mailto:artemaikido@gmail.com">artemaikido@gmail.com</a>
         </div>
-        <div>
-          <h3 class="footer__nav-title">Навигация</h3>
-          <ul class="footer__nav">
+        <div><h2 class="footer__nav-title">Навигация</h2><ul class="footer__nav">
             <li><a href="index.html" class="footer__link">Главная</a></li>
-            <li><a href="about.html" class="footer__link">О нас</a></li>
-            <li><a href="portfolio.html" class="footer__link">Портфолио</a></li>
+            <li><a href="about.html" class="footer__link">О разработчике</a></li>
+            <li><a href="portfolio.html" class="footer__link">Проекты</a></li>
             <li><a href="contact.html" class="footer__link">Контакты</a></li>
-          </ul>
-        </div>
+          </ul></div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 NovaStudio. Основатель Артем Николаиди.</p>
-      </div>
+      <div class="footer__bottom"><p>&copy; 2026 Артём Николаиди. NovaStudio - личный проект.</p></div>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

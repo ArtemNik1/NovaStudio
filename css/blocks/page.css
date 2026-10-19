@@ -39,7 +39,7 @@
 
 .content__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 32px;
 }
 
@@ -240,6 +240,36 @@
 
 .form__submit {
   width: 100%;
+}
+
+.content { width: 100%; box-sizing: border-box; }
+.section__title--on-dark { color: #f8fafc; }
+.developer-card { flex-direction: column; gap: 18px; }
+.developer-card__initials { font-weight: 800; }
+.developer-card__name { font-size: 1.3rem; color: #f8fafc; }
+.developer-card__role { font-size: 1rem; color: #94a3b8; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px; }
+.project-card { overflow: hidden; background: #1e293b; border: 1px solid #334155; border-radius: 16px; }
+.project-card__image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; background: #0f172a; }
+.project-card__body { padding: 26px; }
+.project-card__kind { color: #38bdf8; font-size: .85rem; }
+.project-card__title { color: #f8fafc; font-size: 1.5rem; margin: 12px 0; }
+.project-card__text, .content-note { color: #cbd5e1; line-height: 1.7; }
+.project-card__stack { color: #94a3b8; font-size: .85rem; margin: 22px 0; }
+.content-note { margin-top: 32px; }
+.contact-content .cards { margin-bottom: 48px; }
+.text-link { color: #7dd3fc; overflow-wrap: anywhere; text-underline-offset: 4px; }
+.form__note, .form__status { color: #cbd5e1; font-size: .9rem; line-height: 1.6; }
+.form__status { min-height: 1.6em; }
+.form__copy { margin-top: 12px; }
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 200; padding: 14px 18px; background: #f8fafc; color: #0f172a; border-radius: 8px; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+:focus-visible { outline: 3px solid #7dd3fc; outline-offset: 4px; }
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
 }
 
 @media (max-width: 768px) {
